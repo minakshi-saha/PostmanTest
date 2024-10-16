@@ -15,7 +15,7 @@
 						"id": "b0b91744-543e-4be0-900d-721fd8e5c9b0",
 						"exec": [
 							"// Validate that the response code should be 200",
-							"pm.test(\"Status code is success\", function () {",
+							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
@@ -36,7 +36,7 @@
 							"",
 							"// Validate that the response has url property",
 							"pm.test(\"Response to have 'url' property\", function () {",
-							"    pm.expect(pm.response.json()).to.have.property('url');",
+							"    pm.expect(pm.response.json()).to.have.property('urls');",
 							"});",
 							""
 						],
