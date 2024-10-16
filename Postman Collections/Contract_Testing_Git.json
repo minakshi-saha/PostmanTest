@@ -78,6 +78,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "cf6370f7-e079-4012-a143-49cb89d7dcec",
 						"exec": [
 							"// Validate that the response code should be 200\r",
 							"pm.test(\"Response Code should be 200\", function () {\r",
@@ -95,7 +96,7 @@
 							"pm.test(\"`args` should contain the correct query params\", function () {\r",
 							"    pm.expect(json.args).to.be.an('object');\r",
 							"    pm.expect(json.args.foo).to.eql('bar');\r",
-							"    pm.expect(json.args.baz).to.eql('value');\r",
+							"    pm.expect(json.args.baz).to.eql('values');\r",
 							"});\r",
 							"\r",
 							"// Non-trivial data types like Dates can also be tested against\r",
@@ -105,6 +106,14 @@
 							"});\r",
 							""
 						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
 						"type": "text/javascript"
 					}
 				}
