@@ -36,7 +36,7 @@
 							"",
 							"// Validate that the response has url property",
 							"pm.test(\"Response to have 'url' property\", function () {",
-							"    pm.expect(pm.response.json()).to.have.property('urls');",
+							"    pm.expect(pm.response.json()).to.have.property('url');",
 							"});",
 							""
 						],
