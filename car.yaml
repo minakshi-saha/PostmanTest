@@ -12,7 +12,7 @@ paths:
         - in: query
           name: searchString
           description: pass an optional search string
-          required: false
+          required: true
           schema:
             type: string
       responses:
