@@ -18,3 +18,16 @@ paths:
       responses:
         '200':
           description: search results matching criteria
+  /cars/{carId}:
+    get:
+        summary: searches cars
+        parameters:
+          - in: path
+            name: carId
+            description: pass an optional search string
+            required: true
+            schema:
+              type: string
+        responses:
+          '200':
+            description: search results matching criteria
