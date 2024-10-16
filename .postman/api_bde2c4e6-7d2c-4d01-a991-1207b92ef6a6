@@ -9,6 +9,7 @@ id = bde2c4e6-7d2c-4d01-a991-1207b92ef6a6
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"39046111-b4bc8c15-3afc-48a2-86dc-5fe2d8c4934a","path":"Cars API.json","metaData":{"generateCollectionPreferences":"{\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"parametersResolution\":\"Schema\",\"folderStrategy\":\"Paths\",\"includeAuthInfoInExample\":true,\"enableOptionalParameters\":true,\"keepImplicitHeaders\":false,\"includeDeprecated\":true,\"alwaysInheritAuthentication\":true,\"updateCollectionSync\":true,\"requestParametersResolution\":\"Schema\",\"exampleParametersResolution\":\"Schema\"}"}}
 
 [config.relations.collections.metaData]
 

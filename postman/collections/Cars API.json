@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "b4bc8c15-3afc-48a2-86dc-5fe2d8c4934a",
+		"name": "Cars API",
+		"description": "This is a simple API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "39046111-b4bc8c15-3afc-48a2-86dc-5fe2d8c4934a"
+	},
+	"item": [
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "searches cars",
+					"id": "791ea553-0783-4980-9668-816494a7fbd2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cars?searchString=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cars"
+							],
+							"query": [
+								{
+									"key": "searchString",
+									"value": "<string>",
+									"description": "(Required) pass an optional search string"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "fa14334a-61a1-490e-9800-4077c5dd19b9",
+							"name": "search results matching criteria",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/cars?searchString=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cars"
+									],
+									"query": [
+										{
+											"description": "(Required) pass an optional search string",
+											"key": "searchString",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				}
+			],
+			"id": "fc262c6a-1877-4b66-9065-ab3677b4074f"
+		}
+	],
+	"variable": [
+		{
+			"id": "7a36b2cb-5b1e-4a18-b3e8-b54258a3f38e",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
