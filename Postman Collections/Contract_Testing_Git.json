@@ -98,7 +98,7 @@
 							"pm.test(\"`args` should contain the correct query params\", function () {\r",
 							"    pm.expect(json.args).to.be.an('object');\r",
 							"    pm.expect(json.args.foo).to.eql('bar');\r",
-							"    pm.expect(json.args.baz).to.eql('values');\r",
+							"    pm.expect(json.args.baz).to.eql('value');\r",
 							"});\r",
 							"\r",
 							"// Non-trivial data types like Dates can also be tested against\r",
@@ -115,8 +115,12 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"packages": {},
-						"type": "text/javascript"
+						"id": "6d348edc-e286-4bd3-8527-cdaf0f6f2d7a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
