@@ -12,9 +12,10 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "b0b91744-543e-4be0-900d-721fd8e5c9b0",
 						"exec": [
 							"// Validate that the response code should be 200",
-							"pm.test(\"Status code is 200\", function () {",
+							"pm.test(\"Status code is success\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
@@ -39,7 +40,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
