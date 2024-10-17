@@ -3,10 +3,10 @@
   "info" : {
     "title" : "homeapi",
     "description" : "The API for the EatBacon IOT project",
-    "version" : "1.0.2"
+    "version" : "1.0.3"
   },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/MINAKSHISAHA/FirstAPI/1.0.2",
+    "url" : "https://virtserver.swaggerhub.com/MINAKSHISAHA/FirstAPI/1.0.3",
     "description" : "SwaggerHub API Auto Mocking"
   } ],
   "paths" : {
